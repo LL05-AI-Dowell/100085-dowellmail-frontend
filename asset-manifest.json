@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ccf94b05.css",
-    "main.js": "/static/js/main.41781a98.js",
-    "static/js/453.f4638558.chunk.js": "/static/js/453.f4638558.chunk.js",
-    "index.html": "/index.html",
-    "main.ccf94b05.css.map": "/static/css/main.ccf94b05.css.map",
-    "main.41781a98.js.map": "/static/js/main.41781a98.js.map",
-    "453.f4638558.chunk.js.map": "/static/js/453.f4638558.chunk.js.map"
+    "main.css": "/100085-dowellmail-frontend/static/css/main.ccf94b05.css",
+    "main.js": "/100085-dowellmail-frontend/static/js/main.ce222dac.js",
+    "static/js/453.f4638558.chunk.js": "/100085-dowellmail-frontend/static/js/453.f4638558.chunk.js",
+    "index.html": "/100085-dowellmail-frontend/index.html",
+    "main.ccf94b05.css.map": "/100085-dowellmail-frontend/static/css/main.ccf94b05.css.map",
+    "main.ce222dac.js.map": "/100085-dowellmail-frontend/static/js/main.ce222dac.js.map",
+    "453.f4638558.chunk.js.map": "/100085-dowellmail-frontend/static/js/453.f4638558.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ccf94b05.css",
-    "static/js/main.41781a98.js"
+    "static/js/main.ce222dac.js"
   ]
 }
