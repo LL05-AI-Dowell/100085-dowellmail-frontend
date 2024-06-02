@@ -66,6 +66,12 @@ async function generateReport() {
       return diffDays <= 30;
     }).length;
 
+    console.log({
+      totalEmailsTested,
+      statusCounts,
+      emailsTestedLast7Days,
+      emailsTestedLast30Days
+    });
     return {
       totalEmailsTested,
       statusCounts,
@@ -79,7 +85,6 @@ async function generateReport() {
 
 generateReport().then(report => console.log(report));
 
-
 const Report = () => {
     const [report, setReport] = useState(null);
   
@@ -91,7 +96,6 @@ const Report = () => {
 
       getData();
     }, []);
-
 
     if (!report) {
         return <div>Loading...</div>; 
@@ -108,22 +112,22 @@ const Report = () => {
           <h2>Status Count</h2>
           <div className="circle-container">
              <Tooltip title={<span style={{ fontSize: '18px' }}>Valid</span>} arrow>
-              <div className="circle">{report.statusCounts['valid']}</div>
+              <div className="circle valid">{report.statusCounts['valid']}</div>
             </Tooltip>
             <Tooltip title={<span style={{ fontSize: '18px' }}>Invalid</span>} arrow>
-              <div className="circle">{report.statusCounts['invalid']}</div>
+              <div className="circle invalid">{report.statusCounts['invalid']}</div>
             </Tooltip>
             <Tooltip title={<span style={{ fontSize: '18px' }}>Do not Mail</span>} arrow>
-              <div className="circle">{report.statusCounts['do_not_mail']}</div>
+              <div className="circle do-not-mail">{report.statusCounts['do_not_mail']}</div>
             </Tooltip>
             <Tooltip title={<span style={{ fontSize: '18px' }}>Catch All</span>} arrow>
-              <div className="circle">{report.statusCounts['catch-all']}</div>
+              <div className="circle catch-all">{report.statusCounts['catch-all']}</div>
             </Tooltip>
             <Tooltip title={<span style={{ fontSize: '18px' }}>Unknown</span>} arrow>
-              <div className="circle">{report.statusCounts['unknown']}</div>
+              <div className="circle unknown">{report.statusCounts['unknown']}</div>
             </Tooltip>
             <Tooltip title={<span style={{ fontSize: '18px' }}>Abuse</span>} arrow>
-              <div className="circle">{report.statusCounts['abuse']}</div>
+              <div className="circle abuse">{report.statusCounts['abuse']}</div>
             </Tooltip>
           </div>
         </div>
@@ -140,4 +144,3 @@ const Report = () => {
   };
   
   export default Report;
-

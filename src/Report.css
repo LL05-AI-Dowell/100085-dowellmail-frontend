@@ -1,0 +1,148 @@
+.report-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  border: 3px solid #e0e0e0;
+  width: 40%;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  margin: auto;
+}
+
+.report-container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: left;
+  border: 3px solid #e0e0e0;
+  border-radius: 10px;
+  word-spacing: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.report-section {
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: flex-start;
+  word-spacing: 3px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.circle-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #353535;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.valid {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.invalid {
+  background: linear-gradient(135deg, #f44336, #e57373);
+}
+
+.do-not-mail {
+  background: linear-gradient(135deg, #ff9800, #ffc107);
+}
+
+.catch-all {
+  background: linear-gradient(135deg, #9c27b0, #ba68c8);
+}
+
+.unknown {
+  background: linear-gradient(135deg, #607d8b, #78909c);
+}
+
+.abuse {
+  background: linear-gradient(135deg, #e91e63, #f48fb1);
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 900px) {
+  .report-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .report-container {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .report-container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
